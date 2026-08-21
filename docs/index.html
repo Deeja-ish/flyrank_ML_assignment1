@@ -178,8 +178,9 @@
     <!-- 1. ABSTRACT -->
     <div class="abstract-card">
         <h3>Abstract</h3>
-        <p>This project shows how website traffic data can help writing teams decide which pages to update first. We analyzed 30,000 web pages from 32 different websites to find patterns of traffic drops. By testing our models on entirely new websites, we trained a simple model (Logistic Regression) to rank pages by their risk of losing traffic. Our model achieved an accuracy of 76% in its top 50 recommendations, 
-            which is three times better than using a simple manual rule (48%). This tool acts as a helpful guide for editors, saving them time by pointing them to the pages that need the most work.</p>
+        <p>This project shows how website traffic data can help writing teams decide which pages to update first. We analyzed 30,000 web pages from 32 different websites to find patterns of traffic drops. By testing our models on entirely new websites, 
+            we trained a simple model (Logistic Regression) to rank pages by their risk of losing traffic. Our model achieved an accuracy of 76% in its top 50 recommendations, 
+            which is a 1.6x lift over using a simple manual rule (48%). This tool acts as a helpful guide for editors, saving them time by pointing them to the pages that need the most work.</p>
     </div>
 
     <!-- 2. INTRODUCTION -->
@@ -208,7 +209,7 @@
     <!-- 5. RESULTS -->
     <h2>4. Results</h2>
     <p>We compared our machine learning model against a simple baseline rule (which just flagged old, popular pages). 
-        The baseline rule got only 48% of its top 50 recommendations right. 
+        The baseline rule got 48% of its top 50 recommendations right. 
         The Logistic Regression model achieved a precision of <strong>76.0%</strong> (getting 38 out of 50 correct). Interestingly, 
         the complex Random Forest model overfit on our training websites, scoring lower (58%) than our simpler models.
     </p>
